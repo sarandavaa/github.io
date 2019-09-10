@@ -1,50 +1,63 @@
-body{
-  background:url("../img/starFormation.jpg") repeat 0 0;
-  font-family: Helvetica, Arial, Sans-serif;
-  font-size: 15px;
-  line-height: 1.5;
-  padding:0;
+
+*{
   margin:0;
 }
 
-header{
-  color:#fff;
-  padding-top: 30px;
-  min-height: 70px;
-  align-items: center;
+body h1, h3{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
 }
-/*Global */
-.container{
+
+body h4, p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+}
+
+body, html {
+  height: 100%
+}
+.bdimg{
+  background: url("../img/starFormation.jpg");
+  min-height:100%;
+  background-position: center;
+  background-size: cover;
+}
+.flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 80%;
-  margin-left:10%;
-}
-
-.box {
-  padding: 4px 6px;
-  display: flex;
-  vertical-align: top;
+  margin: 10px;
   font-size: 20px;
+}
+.box {
+  padding: 10px;
+  margin: 10px;
+  min-height: 250px;
+  min-width: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
-  width: 238px;
-  height: 238px;
-  background: #0a0886;
-  box-sizing: border-box;
-  margin: 0 7px 7px 0;
-  cursor: pointer;
+  background-color: whitesmoke;
+  opacity: 0.4;
 }
 
-footer{
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
-  color: aqua
+.head-box {
+  padding: 10px;
+  font-size: 34px;
+  margin:0, auto;
+  position: relative;
+  justify-content: center;
+  opacity: 0.9;
+  color: blanchedalmond;
 }
 
-#underconstruction{
-  min-height: 400px;
-  background: url("../img/seal.jpeg") no-repeat;
+.footer-box{
+  display: inline;
+  font-size: 24px;
+  margin:0 auto;
+  text-align: center;
+  color: whitesmoke;
 }
 
