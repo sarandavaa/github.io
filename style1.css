@@ -1,0 +1,53 @@
+html {
+}
+
+body{
+  background:url("../img/starFormation.jpg") repeat 0 0;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding:0;
+  margin:0;
+}
+
+header{
+  color:#fff;
+  padding-top: 30px;
+  min-height: 70px;
+  align-items: center;
+}
+/*Global */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 80%;
+  margin-left:10%;
+}
+
+.box {
+  padding: 4px 6px;
+  display: flex;
+  vertical-align: top;
+  font-size: 20px;
+  text-align: center;
+  width: 238px;
+  height: 238px;
+  background: #0a0886;
+  box-sizing: border-box;
+  margin: 0 7px 7px 0;
+  cursor: pointer;
+}
+
+footer{
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: aqua
+}
+
+#underconstruction{
+  min-height: 400px;
+  background: url("../img/seal.jpeg") no-repeat;
+}
+
