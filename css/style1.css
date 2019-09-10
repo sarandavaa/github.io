@@ -41,7 +41,7 @@ body, html {
 .head-box {
   padding: 10px;
   font-size: 34px;
-  margin:0, auto;
+  margin:0;
   position: relative;
   justify-content: center;
   opacity: 0.9;
