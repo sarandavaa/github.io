@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Homework2 - Part1</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color:#1976D2;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #FFEB3B;
+      color: white;
+    }
+
+    input{text-align: right}
+    body{background-color: #d5e1df}
+
+    .mainBody{width: 500px; margin: 0px auto;}
+
+  </style>
+  <script>
+
+  function result(){
+
+      var num1, num2, num3, sum, ave, smallest, largest;
+      hwAvg = parseInt(document.forms["gradeForm"].elements["hwAvg"].value);
+      midExam = parseInt(document.forms["gradeForm"].elements["midExam"].value);
+      finalExam = parseInt(document.forms["gradeForm"].elements["finalExam"].value);
+      participation = parseInt(document.forms["gradeForm"].elements["participation"].value);      
+      finalGrade = parseInt(0.5 * hwAvg + 0.2 * midExam + 0.2 * finalExam + 0.1 * participation)
+    
+      document.getElementById("result").innerHTML = finalGrade;
+
+    </script>
+  </head>
+
+<body>
+
+  <ul>
+    <li><a class ="active" href="hw2part1.html">Part1</a></li>
+    <li><a href="hw2part2.html">Part 2</a></li>
+    <li><a href="hw2part3.html">Part3</a></li>
+  </ul>
+
+  <section class= "mainBody">
+    <h2>Homework 2</h2>
+    <h4>Part1 - Student Grades</h4>
+    <form action="#" name ="gradeForm" onsubmit="return false" >
+      <table>
+        <tr>
+          <td> Enter Homework Grade</td>
+          <td><input type="number" name = "hwAvg" size= "10"></td>
+        </tr>
+        <tr>
+          <td> Enter Midterm Grade</td>
+          <td> <input type= "number" name = "midExam" size = "10"></td>
+        </tr>
+        <tr>
+          <td> Enter Final Exam Grade</td>
+          <td> <input type= "number" name = "finalExam" size = "10"></td>
+        </tr>
+        <tr>
+            <td> Enter Participation Grade</td>
+            <td> <input type= "number" name = "participation" size = "10"></td>
+          </tr>
+      </table>
+    <br>
+    <br>
+    <input type="button" value="Click for Result" onclick="result()">
+    <input type="reset" value="RESET">
+    </form>
+
+    <br>
+    <br>
+    <p id="result"></p>
+
+
+</section>
+</body>
+</html>
