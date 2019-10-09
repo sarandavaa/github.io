@@ -14,6 +14,7 @@ body {
 nav {
     margin: 50px 0;
     background-color: #0033cc;
+    text-align: center;
 }
 
 nav ul {
@@ -26,6 +27,7 @@ nav ul {
 nav ul li {
     display: inline-block;
     background-color: #0033cc;
+    width: 170px;
 }
 
 nav a {
@@ -49,18 +51,24 @@ nav ul ul {
     top: 60px;/* height of the main nav*/
 }
 
+nav ul li:hover ul {display: block;}
 
-  /* Display dropdown hover*/
-nav ul li:hover > ul {
-    display: inherit;
+nav ul li ul {
+    position: absolute;
+    width: 170px;
+    display: none;
 }
 
-  /*Dropdown Menu*/
-nav ul ul li {
-    width: 170px;
-    float: none;
-    display: list-item;
-    position: relative;
+  /* Display dropdown hover
+nav ul li a:hover > ul {
+    display: inherit;
+}
+*/
+
+nav ul li ul li { 
+  background: #0033cc; 
+  display: block;
+  color: #ffdb4d; 
 }
 
 .mainBody{
@@ -72,5 +80,6 @@ nav ul ul li {
     color: #0033cc;
 }
 
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
+header {
+    text-align: center;
+}
