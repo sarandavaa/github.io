@@ -1,73 +1,76 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     color: #0033cc;
-  }
-  body h1, h3, h4, p {
-      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  #container {
-      margin: 0 auto;
+    font-size: 22px;
+    word-wrap: break-word !important;
+    background-color:thistle;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
-  nav {
-      margin: 50px 0;
-      background-color: #0033cc;
-      position: sticky;
-  }
+#container {
+    margin: 0 auto;
+}
 
-  nav ul {
-      padding: 0;
-      margin:0;
-      list-style: none;
-      position: relative;
-  }
+nav {
+    margin: 50px 0;
+    background-color: #0033cc;
+}
 
-  nav ul li {
-      display: inline-block;
-      background-color: #0033cc;
-  }
+nav ul {
+    padding: 0;
+    margin:0;
+    list-style: none;
+    position: relative;
+}
 
-  nav a{
-      display: block;
-      padding: 0 10px;
-      color: orange;
-      font-size: 20px;
-      line-height: 60px;
-      text-decoration: none;
-  }
+nav ul li {
+    display: inline-block;
+    background-color: #0033cc;
+}
 
-  nav a:hover {
-      background-color: #ffdb4d;
-      color:violet;
-  }
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: orange;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ffdb4d;
+    color:#0033cc;
+}
 
   /* Hide dropdown by Default */
-  nav ul ul {
-      display: none;
-      position: absolute;
-      top: 60px;/* height of the main nav*/
-  }
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;/* height of the main nav*/
+}
 
 
   /* Display dropdown hover*/
-  nav ul li:hover > ul {
-      display: inherit;
-  }
+nav ul li:hover > ul {
+    display: inherit;
+}
 
   /*Dropdown Menu*/
-  nav ul ul li {
-      width: 170px;
-      float: none;
-      display: list-item;
-      position: relative;
-  }
-
-
-  input{text-align: right}
-  body{background-color:thistle;
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
 }
 
 .mainBody{
     width: 80vh; 
     margin: 20px auto;}
+
+.active{
+    background-color: #ffdb4d;
+    color: #0033cc;
+}
+
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }

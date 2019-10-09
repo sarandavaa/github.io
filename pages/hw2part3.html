@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Homework 2 - Part 1</title>
+  <title>Homework2 - Part1</title>
   <link rel = "stylesheet" href = "../stylesheet.css">
 
   <script src="../hw2.js"></script> 
@@ -35,30 +35,23 @@
 
   <section class= "mainBody">
     <h1>Homework 2</h1>
-    <h3>Part 1 - Student Grades</h3>
+    <h3>Part3 - Celsius and Fahrenheit Conversion</h3>
     <form action="#" method="GET" id="gradeForm" onsubmit="return false;">
         
       <table>
         <tr>
-          <td> Enter Homework Grade</td>
+          <td> Enter Fahrenheit</td>
           <td><input type="number" id = "hwAvg" size= "10"></td>
         </tr>
         <tr>
-          <td> Enter Midterm Grade</td>
+          <td> Enter Celsius</td>
           <td> <input type= "number" id = "midExam" size = "10"></td>
         </tr>
-        <tr>
-          <td> Enter Final Exam Grade</td>
-          <td> <input type= "number" id = "finalExam" size = "10"></td>
-        </tr>
-        <tr>
-            <td> Enter Participation Grade</td>
-            <td> <input type= "number" id = "partScore" size = "10"></td>
-          </tr>
       </table>
     <br>
     <br>
-    <input type="submit" onclick="gradeCalculate()" value="Click for Result" >
+    <input type="submit" onclick="convertToC()" value="Convert to Celcius" >
+    <input type="submit" onclick="convertToF()" value="Convert to Fahrenheit" >
     <input type="reset" value="RESET">
     </form>
 

@@ -1,14 +1,14 @@
-function calculate(){
+function gradeCalculate(){
         
-    var hwAvg = parseInt(document.getElementById("hwAvg").value);
-    var midExam = parseInt(document.getElementById("midExam").value);
-    var finalExam = parseInt(document.getElementById("finalExam").value);
-    var partScore = parseInt(document.getElementById("partScore").value);      
+    let hwAvg = parseInt(document.getElementById("hwAvg").value);
+    let midExam = parseInt(document.getElementById("midExam").value);
+    let finalExam = parseInt(document.getElementById("finalExam").value);
+    let partScore = parseInt(document.getElementById("partScore").value);      
       
     finalGrade = parseInt(0.5 * hwAvg + 0.2 * midExam + 0.2 * finalExam + 0.1 * partScore);
 
-    var msg = "";
-    var letterGrade ="";
+    let msg = "";
+    let letterGrade ="";
 
     switch(true) {
     case (finalGrade >= 90):
@@ -33,3 +33,4 @@ function calculate(){
     document.getElementById('result').innerHTML = "The Final Grade of the student is " + finalGrade + ". " + msg
 
   }
+
