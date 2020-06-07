@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    height: 70px;
+    background: pink;
+    font-family: sans-serif;
+  }
+  main {
+    font-size: 0;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    background-size: 100%;
+    background-position: center;
+  }
+  main .row {
+    display: flex;
+  }
+  main .row div {
+    flex: 1;
+    height: 300px;
+  }
+  .yellow {
+    background: yellow;
+  }
+  .red {
+    background: red;
+  }
+  .green {
+    background: green;
+  }
+  footer {
+    height: 50px;
+    background: purple;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  
+  @media only screen and (max-width: 900px) { 
+    main {
+      width: 80%;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) { 
+    main {
+      width: 100%;
+    }
+  }
