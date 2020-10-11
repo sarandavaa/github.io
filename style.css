@@ -2,7 +2,7 @@
 h1, h2 {
     font-family: 'Archivo Black', sans-serif;
 }
-p {
+p, li, td, th {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -11,3 +11,7 @@ p {
     height: 100vh;
 }
 
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+  }
