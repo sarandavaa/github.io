@@ -6,3 +6,8 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+.front {
+    width: 60vw;
+    height: 100vh;
+
+}
