@@ -9,6 +9,7 @@
     </head>
     <body>
         <div class='list'>
+            <h4>List Section</h4>
             <h1>Things I've Learned</h1>
             <h2>Internet Basics</h2>
             <ol>
@@ -40,6 +41,7 @@
         </div>
 
         <div class='webRecreation'>
+            <h4>Web Recreation Section</h4>
             <h1>Sita</h1>
             <p>Hi, I am a dragon incarnated as a dog. Roaar!</p>
             <img src='sita.jpg' height='500px'>
@@ -55,6 +57,7 @@
         </div>
 
         <div class='tables'>
+            <h4>Table Section</h4>
             <h1>Table</h1>
             <table>
                 <thead>
@@ -113,7 +116,62 @@
         </div>
 
         <div>
-            
+            <h4>Form Section</h4>
+            <h1>Register</h1>
+            <form>
+                <label for='first'>First Name: </label>
+                <input type='text' placeholder ='First Name' name='first' id='first' required>
+                <label for='last'>Last Name:</label>
+                <input type='text' placeholder ='Last Name' name='last' id='last' required>
+                <div>
+                    <label for='Female'><input type='radio' value='Female' name='Female' id='Female'>Female</label>
+                    <label for='Male'><input type='radio' value='Male' name='Male' id='Male'>Male</label>
+                    <label for='Non-binary'><input type='radio' value='Non-binary' name='Non-binary' id='Non-binary'>Non-binary</label>
+                    <label for='Other'><input type='radio'value='Other' name="Other" id='Other'>Other</label>
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type='email'placeholder= 'Email' required>
+                    <label>Password:</label>
+                    <input type='password'placeholder= 'Password' required>
+                </div>
+
+                <div>
+                    <label>Birthday:
+                        <select>
+                            <option>Jan</option>
+                            <option>Feb</option>
+                            <option>Mar</option>
+                            <option>Apr</option>
+                            <option>May</option>
+                            <option>Jun</option>
+                            <option>Jul</option>
+                            <option>Aug</option>
+                            <option>Sep</option>
+                            <option>Oct</option>
+                            <option>Nov</option>
+                            <option>Dec</option>
+                        </select>
+                        <select>
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                        </select>
+                        <select>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                        </select>
+                    </label>
+
+                </div>
+
+                <input type='submit'>
+            </form>
         </div>
 
     </body>
