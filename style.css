@@ -1,5 +1,5 @@
 
-h1 {
+h1, h2 {
     font-family: 'Archivo Black', sans-serif;
 }
 p {
@@ -9,5 +9,5 @@ p {
 .front {
     width: 60vw;
     height: 100vh;
-
 }
+
