@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.headline {
+    align-self: center;
+    justify-self: center;
+}
+
+table, th, td{
+    border: 1px solid blueviolet;
+}
+
+h1, h2 {
+    line-height: 160%;
+}
+
+h1 {
+    font-size: ;
+}
+
+nav {
+    padding: 20px 30px;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: underline;
+    display: flex;
+    border: indigo;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
